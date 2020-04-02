@@ -16,7 +16,7 @@ RUN mv /etc/murmur.ini /etc/murmur/murmur.ini && \
     
 RUN sed -i 's/database=.*/database=\/etc\/murmur\/murmur.sqlite/g' /etc/murmur/murmur.ini
 
-EXPOSE 64738/tcp 64738/udp 50051
+EXPOSE 64738/tcp 64738/udp
 
 USER murmur
 
