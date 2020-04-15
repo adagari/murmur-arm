@@ -14,7 +14,7 @@ RUN apk update && \
 RUN mv /etc/murmur.ini /etc/murmur/murmur.ini && \
     chown -R murmur:murmur /etc/murmur
     
-RUN sed -i 's/database=.*/database=\/etc\/murmur\/murmur.sqlite/g' /etc/murmur/murmur.ini
+RUN sed -i 's/database=.*/database=\/etc\/murmur\/murmur.sqlite/' /etc/murmur/murmur.ini
 
 EXPOSE 64738/tcp 64738/udp
 
